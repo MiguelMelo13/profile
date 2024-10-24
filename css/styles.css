@@ -103,7 +103,7 @@
     --color-1-lighter : hsla(36, 72%, 90%, 1);
     --color-1-light   : hsla(36, 72%, 80%, 1);
     --color-1-dark    : hsla(36, 72%, 60%, 1);
-    --color-1-darker  : hsla(36, 72%, 50%, 1);
+    --color-1-darker  : hsl(36, 72%, 50%);
     --color-2-lighter : hsla(168, 62%, 56%, 1);
     --color-2-light   : hsla(168, 62%, 46%, 1);
     --color-2-dark    : hsla(168, 62%, 26%, 1);
@@ -3507,6 +3507,16 @@ img.u-pull-left {
     margin-top    : 0;
     margin-bottom : var(--vspace-0_125);
 }
+
+.hover-link {
+    text-decoration: none; /* Remove underline from link */
+    color: inherit; /* Inherit color from parent */
+}
+
+.hover-link:hover .timeline__title {
+    color: hsl(36, 72%, 50%); /* Change this to your desired hover color */
+}
+
 
 .timeline__meta {
     font-family   : var(--font-1);
